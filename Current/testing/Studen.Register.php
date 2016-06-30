@@ -1,8 +1,7 @@
 <?php
-
 //checking if user is logged in
 session_start();
-if(isset($_SESSION['user'])!="") //checks if user is signed in by looking at username
+if(isset($_SESSION['users'])!="") //checks if user is signed in by looking at username
 {
  header("Location: Home.php"); //if user is logged in, direct them to home page
 }
@@ -12,14 +11,15 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
 {
  $first = mysql_real_escape_string($_POST['first']);
  $last  = mysql_real_escape_string($_POST['last']);
- $uname = mysql_real_escape_string($_POST['uname']);
- $grade = mysql_real_escape_string($_POST['grade']);
  $email = mysql_real_escape_string($_POST['email']);
- $upass = md5(mysql_real_escape_string($_POST['pass'])); 
+ $password = md5(mysql_real_escape_string($_POST['password'])); 
  $birthday = mysql_real_escape_string($_POST['birthday']); //grabs the info put in by the user
 
 
- if(mysql_query("INSERT INTO users(first,last,username,grade,email,password,birthday) VALUES('$first','$last','$uname','$grade','$email','$upass','$birthday')")) //sends info to database
+ if($password==$password2)
+{
+
+ (mysql_query("INSERT INTO users(first,last,email,password,birthday) VALUES('$first','$last','$email','$password','$birthday')")) //sends info to database
  {
   ?>
         <script>alert('successfully registered.');</script>
@@ -32,48 +32,53 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
         <?php
  }
 }
+
 ?>
+
+
 <!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login & Registration System</title>
-</head>
-<body>
-<center>
-<div id="login-form">
-<form method="post">
-<table align="center" width="30%" border="0">
-<tr>
-<td><input type="text" name="first" placeholder="Your First Name" required /></td>
-</tr>
-<tr>
-<td><input type="text" name="last" placeholder="Your Last Name" required /></td>
-</tr>
-<tr>
-<td><input type="text" name="uname" placeholder="User Name" required /></td>
-</tr>
-<tr>
-<td><input type="text" name="grade" placeholder="Grade" required /><td>
-</tr>
-<tr>
-<td><input type="email" name="email" placeholder="Your Email" required /></td>
-</tr>
-<tr>
-<td><input type="password" name="pass" placeholder="Your Password" required /></td>
-</tr>
-<tr>
-<td><input type="birthday" name="birthday" placeholder="Your birthday" value="dd/mm/yy" required /></td>
-</tr>
-<tr>
-<td><button type="submit" name="btn-signup">Sign Me Up</button></td>
-</tr>
-<tr>
-<td><a href="Index.php">Sign In Here</a></td>
-</tr>
-</table>
-</form>
-</div>
-</center>
-</body>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='signup.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+		<script type="text/javascript" src="formiteration6.js"></script>
+    </head>
+    <body>
+    <div id="login-form">
+
+      <form method="post">
+        <h1>Sign Up</h1>
+
+
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name"> First Name:</label>
+          <input type="text" name="first" placeholder="First Name" required>
+          
+          <label for="last">Last Name:</label>
+          <input type="text" name="last" placeholder="Last Name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="example@gmail.com" required>
+
+          <label for="password">Password:</label>
+          <input type="password" name="password" placeholder="Password" required>
+
+          <label for="password">Password Confirmation:</label>
+          <input type="password" name="password2" placeholder="Password" required>
+
+          
+          <label>Date of Birth:</label>
+      <label for="size_1"></label><input type="date" name="birthday" id="birthday" value="dd/mm/yy" required />
+        </fieldset>
+        
+        </fieldset>
+        <button name="btn-signup" type="submit" value="submit">Sign Up</button>
+      </form>
+    </div>
+    </body>
 </html>

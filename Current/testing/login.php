@@ -61,7 +61,7 @@ if(isset($_POST['btn-login']))
 				<p><label for="password">Password</label></p>
 				<p><input type="password" name="pass" id="pass" value="password" onBlur="if(this.value=='')this.value='password'" onFocus="if(this.value=='password')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
 				<form method="get"action="sp/index.html">
-				<p><button type="submit" name="btn-login">Log Me Up</button></td>
+				<p><button type="submit" name="btn-login">Sign In</button></td>
 				</form>
 			</fieldset>
 
