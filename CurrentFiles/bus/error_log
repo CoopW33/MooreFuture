@@ -1,0 +1,5 @@
+[05-Jul-2016 17:42:44 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/moorefuture/public_html/bus/busprofile.php on line 6
+[06-Jul-2016 15:02:40 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/bus/busprofile.php on line 12
+[06-Jul-2016 15:02:54 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/bus/busprofile.php on line 12
+[06-Jul-2016 15:03:08 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/bus/busprofile.php on line 12
+[06-Jul-2016 15:06:46 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/bus/busprofile.php on line 12

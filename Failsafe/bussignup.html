@@ -1,0 +1,67 @@
+<?php
+session_start();
+include_once 'Dbconnect.php';
+if(isset($_SESSION['Business'])!="")
+{
+ header("Location: Home.php");
+}
+if(isset($_POST['btn-signup'])) //when signup button is pressed
+{
+ $Company = mysql_real_escape_string($_POST['Company']);
+ $email = mysql_real_escape_string($_POST['email']);
+ $upass = md5(mysql_real_escape_string($_POST['pass'])); 
+ $Phone = mysql_real_escape_string($_POST['Phone']); //grabs the info put in by the user
+
+
+ if(mysql_query("INSERT INTO Business(Company,email,password,Phone)VALUES('$Company','$email','$upass','$Phone')")) //sends info to database
+ {
+  ?>
+        <script>alert('successfully registered.');</script>
+        <?php
+ }
+ else
+ {
+  ?>
+        <script>alert('error while registering you...');</script>
+        <?php
+ }
+}
+?>
+<!DOCTYPE HTML>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='signup.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+		<script type="text/javascript" src="formiteration6.js"></script>
+    </head>
+    <body>
+
+      <form method="post">
+      
+        <h1>Sign Up</h1>
+
+
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name"> Company:</label>
+          <input type="text" id="Company" name="Company" required>
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mail">Phone:</label>
+          <input type="text" id="Phone" name="Phone" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        
+        </fieldset>
+        <button type="submit" name="btn-signup">Sign Up</button>
+      </form>
+      
+    </body>
+</html>
