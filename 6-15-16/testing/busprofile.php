@@ -68,10 +68,9 @@ $userRow=mysql_fetch_array($res); //$res is users email
 				<div id="info">
 					
 					
-						<h3>First Name: <?php echo $userRow['first'];?> </h3>
-						<h3>Last Name: <?php echo $userRow['last'];?> </h3>
-						<h3>Grade: <?php echo $userRow['grade'];?> </h3>
-						<h3>Birthday: <?php echo $userRow['birthday'];?> </h3>"
+						<h3>Company: <?php echo $userRow['Company'];?> </h3>
+						<h3>Email: <?php echo $userRow['email'];?> </h3>
+						<h3>Phone: <?php echo $userRow['Phone'];?> </h3>
 
 <h3>Welcome</h3>
 					
