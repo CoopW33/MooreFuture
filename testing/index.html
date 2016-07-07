@@ -1,7 +1,12 @@
-<!DOCTYPE html>
 <?php
-include 'Database/init.php';
+session_start();
+include_once 'Dbconnect.php';
+if(isset($_SESSION['user'])!="") //checks if user is logged in
+{
+ header("Location: sp/index.html");
+}
 ?>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
@@ -47,14 +52,14 @@ include 'Database/init.php';
 					<section>
 					<h2>Sign up</h2>
 					<p> Three steps to get started to your path to a bright future!</p>
-					<form method="get" action="Studen.Register.php"> 
+					<form method="get" action="Studen.Register.html"> 
 					<button type="link"  style="background-color:transparent; border-color:transparent;"> <img src="Sign.png" height="100"/></button>
 					</form>
 					</section>
 					<section>
 					<h3>Login</h3>
 					<p> Already have an account with us ,then login. </p>
-					<a href="login.php"><button type="link"  align ="center" style="background-color:transparent; border-color:transparent;"> <img src="unnamed.png" height="100"/></button></a>
+					<a href="login.html"><button type="link"  align ="center" style="background-color:transparent; border-color:transparent;"> <img src="unnamed.png" height="100"/></button></a>
 					</div><!-- /page-inner -->
 				</div><!-- /page-right -->
 				<div class="page page-left">
@@ -62,14 +67,14 @@ include 'Database/init.php';
 						<section>
 							<h2>Sign up</h2>
 					<p> Three steps to get started to your path to a bright future!</p>
-					<form method="get" action="Business.Register.php"> 
+					<form method="get" action="bussignup.html"> 
 					<button type="link"  style="background-color:transparent; border-color:transparent;"> <img src="Sign.png" height="100"/></button>
 					</form>
 					</section>
 				<section>
 					<h3>Login</h3>
 					<p> Already have an account with us ,then login. </p>
-					<a href="login.php"><button type="link"  align ="center" style="background-color:transparent; border-color:transparent;"> <img src="unnamed.png" height="100"/></button></a>
+					<a href="login.html"><button type="link"  align ="center" style="background-color:transparent; border-color:transparent;"> <img src="unnamed.png" height="100"/></button></a>
 					<section>
 					</div><!-- /page-inner -->
 				</div><!-- /page-left -->

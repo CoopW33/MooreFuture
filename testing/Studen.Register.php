@@ -3,7 +3,7 @@ session_start();
 include_once 'Dbconnect.php';
 if(isset($_SESSION['users'])!="")
 {
- header('Location: index.html');
+ header('Location: sp/index.html');
 }
 if(isset($_POST['btn-signup'])) //when signup button is pressed
 {
