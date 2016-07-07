@@ -3,7 +3,7 @@ session_start();
 include_once 'Dbconnect.php';
 if(isset($_SESSION['users'])!="")
 {
- header('Location: index.html');
+ header('Location: sp/shome.html');
 }
 if(isset($_POST['btn-signup'])) //when signup button is pressed
 {
@@ -14,26 +14,34 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
   $password2 = mysql_real_escape_string($_POST['password2']);
   $birthday = mysql_real_escape_string($_POST['birthday']); 
 
-  if(ctype_alnum($password)){
-    ?>
-    <script>alert('Error: Password must have at least one special character.')</script>
-    <?php
-    $special = true;
-  }else{
-    if(strlen($password)>6){
-      if(preg_match('`[A-Z]`',$password)){
+    if(strlen($password)>5){
         if(preg_match('`[a-z]`',$password)){
           if(preg_match('`[0-9]`',$password)){
             if($password === $password2){
-            if(mysql_query("INSERT INTO users(Company,email,password,Phone)VALUES('$Company','$email','$upass','$Phone')")){
+              if($first != '' or $last != '' or $email != '' or $birthday != ''){
+
+
+            if(mysql_query("INSERT INTO users(first,last,email,password,birthday)VALUES('$first','$last','$email','$password','$birthday')")){
               ?>
               <script>alert('Successfully registered - Thank you for signing up!');</script>
               <?php
+              $res=mysql_query("SELECT * FROM users WHERE email='$email'");
+              $row=mysql_fetch_array($res);
+              if($row['password']==md5($upass))
+              {
+              $_SESSION['user'] = $row['user_id']; //checks if password belongs to user ID
+              header("Location: sp/index.html"); 
+              }
             }else{
               ?>
               <script>alert('Sorry! There has been an error while registering you - Please try again');</script>
               <?php
             }
+            }else{
+              ?>
+              <script>alert('Error: You must enter all the required fields.')
+              <?php
+              }
           }else{
             ?>
             <script>alert('Error: You entered two different passwords.')
@@ -51,13 +59,8 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
           <script>alert('Error: Password must have at least one lowercase letter.')</script>
           <?php
           $lowercase = true;
-        }
-      }else{
-        ?>
-        <script>alert('Error: Your password must have atleat one uppercase letter')</script>
-        <?php
-        $uppercase = true;
-      }
+          }
+    
     }else{
       ?>
       <script>alert('Error: Password must be longer then 6 characters.')</script>
@@ -65,7 +68,6 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
       $length = true;
     }
   }
-}
 ?>
 
 
@@ -73,12 +75,12 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <title>Sign Up Form</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link href='signup.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
-		<script type="text/javascript" src="formiteration6.js"></script>
+    <script type="text/javascript" src="formiteration6.js"></script>
     </head>
     <body>
     <div id="login-form">
@@ -99,29 +101,6 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
           <input type="email" name="email" placeholder="example@gmail.com" required>
 
           <label for="password">Password:</label>
-          <?php
-            if($password3 === false){
-              if($number === false){
-                if($lowercase === false){
-                  if($uppercase === false){
-                    if($length === false){
-
-                    }else{
-                      echo 'Error: Password too short.';
-                    }
-                  }else{
-                    echo 'Error: Password must have one uppercase letter.';
-                  }
-                }else{
-                  echo 'Error: Password must have one lowercase letter.';
-                }
-              }else{
-                echo 'Error: Password must have at least one number.';
-              }
-            }else{
-              echo 'Error: You entered two different passwords.';
-            }
-          ?>
           <input type="password" name="password" placeholder="Password" required>
 
           <label for="password">Password Confirmation:</label>

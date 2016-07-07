@@ -9,59 +9,110 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
 {
  $Company = mysql_real_escape_string($_POST['Company']);
  $email = mysql_real_escape_string($_POST['email']);
- $upass = md5(mysql_real_escape_string($_POST['pass'])); 
- $Phone = mysql_real_escape_string($_POST['Phone']); //grabs the info put in by the user
+ $Phone = mysql_real_escape_string($_POST['Phone']);
+ $account_holder = mysql_real_escape_string($POST['account_holder']);
+ $address = mysql_real_escape_string($POST['address']);
+ $password = mysql_real_escape_string($_POST['password']);
+ $password2 = mysql_real_escape_string($_POST['password2']);
+if(strlen($password)>5){
+        if(preg_match('`[a-z]`',$password)){
+          if(preg_match('`[0-9]`',$password)){
+            if($password === $password2){
+              if($Company === '' or $email === '' or $Phone === '' or $account === '' or $address == ''){
 
 
- if(mysql_query("INSERT INTO Business(Company,email,password,Phone)VALUES('$Company','$email','$upass','$Phone')")) //sends info to database
- {
-  ?>
-        <script>alert('successfully registered.');</script>
-        <?php
- }
- else
- {
-  ?>
-        <script>alert('error while registering you...');</script>
-        <?php
- }
-}
+            if(mysql_query("INSERT INTO Business(Company,email,password,Phone,account_holder,address)VALUES('$Company','$email','$Phone','$password','$account_holder','$address')")){
+              ?>
+              <script>alert('Successfully registered - Thank you for signing up!');</script>
+              <?php
+              $res=mysql_query("SELECT * FROM users WHERE email='$email'");
+              $row=mysql_fetch_array($res);
+              if($row['password']==md5($upass))
+              {
+              $_SESSION['user'] = $row['user_id']; //checks if password belongs to user ID
+              header("Location: sp/index.html"); 
+              }
+            }else{
+              ?>
+              <script>alert('Sorry! There has been an error while registering you - Please try again');</script>
+              <?php
+            }
+            }else{
+              ?>
+              <script>alert('Error: You must enter all the required fields.')
+              <?php
+              }
+          }else{
+            ?>
+            <script>alert('Error: You entered two different passwords.')
+            <?php
+            $password3 = true;
+            }
+          }else{
+            ?>
+            <script>alert('Error: Password must have at least one number.')
+            <?php
+            $number = true;
+          }          
+        }else{
+          ?>
+          <script>alert('Error: Password must have at least one lowercase letter.')</script>
+          <?php
+          $lowercase = true;
+          }
+    
+    }else{
+      ?>
+      <script>alert('Error: Password must be longer then 6 characters.')</script>
+      <?php
+      $length = true;
+    }
+  }
 ?>
-<!DOCTYPE HTML>
+<!DOCTYPE html>
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <title>Sign Up Form</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link href='signup.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
-		<script type="text/javascript" src="formiteration6.js"></script>
+    <script type="text/javascript" src="formiteration6.js"></script>
     </head>
     <body>
+    <div id="login-form">
 
       <form method="post">
-      
         <h1>Sign Up</h1>
 
 
         <fieldset>
           <legend><span class="number">1</span>Your basic info</legend>
-          <label for="name"> Company:</label>
-          <input type="text" id="Company" name="Company" required>
+          <label for="Company"> Company:</label>
+          <input type="text" id="Company" name="Company" placeholder="Company" required>
           
-          <label for="mail">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
 
-          <label for="mail">Phone:</label>
-          <input type="text" id="Phone" name="Phone" required>
+          <label for="Phone">Phone:</label>
+          <input type="text" id="Phone" name="Phone" placeholder="(___) ___ ___" required>
           
           <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password2" name="password2" placeholder="Password" required>
+
+          <label for="account">Account Holder:</label>
+          <input type="text" id="account_holder" name="account_holder" placeholder="Your Name" required>
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" placeholder="123 Main Street, Carthage NC 28327" required>
         
         </fieldset>
-        <button type="submit" name="btn-signup">Sign Up</button>
+        <button type="submit" name="btn-signup" value="submit">Sign Up</button>
       </form>
-      
+     </div> 
     </body>
 </html>
