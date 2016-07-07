@@ -8,7 +8,22 @@ body {
   font-family: 'Nunito', sans-serif;
   color: #384047;
 }
+/* Keeps placeholder text as grey */
 
+::-webkit-input-placeholder { /* Chrome */
+  color: gray;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: gray;
+  opacity: 1;
+}
 form {
   max-width: 300px;
   margin: 10px auto;
@@ -43,7 +58,7 @@ select {
   padding: 15px;
   width: 100%;
   background-color: #e8eeef;
-  color: #8a97a0;
+  color: black;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
@@ -62,21 +77,24 @@ select {
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #47a3da;
+  background-color: #00cc66;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #47a3da;
+  border: 1px solid #00b359;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: .5px;
 }
 
 fieldset {
   margin-bottom: 30px;
   border: none;
+  color:black;
 }
 
 legend {
@@ -93,9 +111,11 @@ label.light {
   font-weight: 300;
   display: inline;
 }
+placeholder {
 
+}
 .number {
-  background-color: #47a3da;
+  background-color: #00cc66;
   color: #fff;
   height: 30px;
   width: 30px;

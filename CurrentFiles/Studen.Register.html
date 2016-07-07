@@ -40,20 +40,20 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
         <link rel="stylesheet" href="css/main.css">
 		<script type="text/javascript" src="formiteration6.js"></script>
     </head>
-    <body>
+    <body text="black">
     <div id="login-form">
 
       <form method="post">
         <h1>Sign Up</h1>
-
+<b>
 
         <fieldset>
-          <legend><span class="number">1</span>Your basic info</legend>
+          <legend><span class="number">1</span>Your info</legend>
           <label for="name"> First Name:</label>
-          <input type="text" name="first" placeholder="First Name" required>
+          <input type="text" name="first" placeholder="John" required>
           
           <label for="last">Last Name:</label>
-          <input type="text" name="last" placeholder="Last Name" required>
+          <input type="text" name="last" placeholder="Smith" required>
           
           <label for="email">Email:</label>
           <input type="email" name="email" placeholder="example@gmail.com" required>
@@ -66,7 +66,7 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
 
           
           <label>Date of Birth:</label>
-      <label for="size_1"></label><input type="date" name="birthday" id="birthday" value="dd/mm/yy" required />
+      <label for="size_1"></label><input type="date" name="birthday" id="birthday" placeholder="mm/dd/yyyy" required />
         </fieldset>
         
         </fieldset>
