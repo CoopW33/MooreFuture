@@ -1,12 +1,12 @@
 <?php
 include 'Dbconnect.php';
 // post_edit.php
-if($_GET('user_level') == 1){
+if($_GET['user_level'] == 1){
     $buisness=true;
 }else{
     $buisness=false;
 }
-if($_GET('user_level') == 2){
+if($_GET['user_level'] == 2){
     $admin=true;
 }else{
     $admin=false;
