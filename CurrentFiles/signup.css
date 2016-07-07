@@ -63,9 +63,9 @@ select {
   margin-bottom: 30px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
+input { 
+margin: 100px 100px 100px 100px;
+padding
 }
 
 select {
