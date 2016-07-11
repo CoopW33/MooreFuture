@@ -56,11 +56,13 @@ select {
   margin: 0;
   outline: 0;
   padding: 15px;
-  width: 100%;
+  width: 93%;
   background-color: #e8eeef;
   color: black;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+  display: block;
+  position: center;
 }
 
 input { 
