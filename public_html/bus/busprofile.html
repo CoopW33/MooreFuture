@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+include_once 'Dbconnect.php';
+
+if(isset($_SESSION['user'])=="") //checks if user is logged in
+{
+ header("Location: moorefuture.com");
+}
+
+$res=mysql_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']); 
+$userRow=mysql_fetch_array($res); //$res is users email
+?>
 <!DOCTYPE html>
 <!--
 	Interphase by TEMPLATED
@@ -7,7 +20,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Moore Future - Profile</title>
+		<title>Generic - Interphase by TEMPLATED</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -16,7 +29,6 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<link rel="stylesheet" href="css/resources.css" />
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -26,18 +38,43 @@
 	</head>
 	<body>
 
+
+
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="index.html">Moore Future</a></h1>
+				<h1><a href="bhome.html"> <div class="dropdown2"><button class="dropbtn2">
+  <img src="images/MFLogo.png" alt="Moore Forward" width="150" height="60"></button></a>
+  <div class="dropdown-content2">
+     <a href="aboutus.html">About Us</a>
+				</h1>
+  		</div>
+	</div>
 				<nav id="nav">
 					<ul>
+						<li><a href="posts.html">
+							<div class="dropdown">
+  <button class="dropbtn">Your Posts</button></a>
+  <div class="dropdown-content" style="right:0;">
+  	<a href="newpost.html"> Make new post</a>
+    
+</li>
+						<li><a href="studsearch.html">
+							<div class="dropdown">
+  <button class="dropbtn">Student Search </button></a>
+  <div class="dropdown-content" style="right:0;">
+    <a href="student.html">Browse</a>
+</li>
+						<li><a href="busprofile.html">
+							<div class="dropdown">
+  <button class="dropbtn">Profile</button></a>
+  <div class="dropdown-content" style="right:0;">
+    <a href="Resources.html">Resources</a>
+    <a href="#">Log out</a>
+</li>
 					
-						<li><a href="posts.html">Your Posts</a></li>
-						<li><a href="studsearch.html">Student Search</a></li>
-						<li><a href="busprofile.html">Profile</a></li>
-						<li><a href="aboutus.html">About Us</a></li>
+  </div>
+</div>
 						
-
 					</ul>
 				</nav>
 			</header>
@@ -47,13 +84,22 @@
 				<div class="container">
 
 					<header class="major">
-						<h2>Profile</h2>
-						<p>Your Info</p>
+						<h2>Profie</h2>
 					</header>
-			
+				</div>
 			</section>
+				<div id="info">
+					
+					
+						<h3>Company: <?php echo $userRow['Company'];?> </h3>
+						<h3>Email: <?php echo $userRow['email'];?> </h3>
+						<h3>Phone: <?php echo $userRow['Phone'];?> </h3>
+
+<h3>Welcome</h3>
+					
+				</div>
 		<!-- Footer -->
-	<footer id="footer">
+			<footer id="footer">
 				<div class="container">
 					<div class="row">
 						<section class="4u 6u(medium) 12u$(small)">

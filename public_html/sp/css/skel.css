@@ -61,7 +61,40 @@
 				width: 300px;
 
 			}
+		/* 125% */
+			.posting.\31 25\25 {
+				width: 100%;
 
+				/* max-width: (containers * 1.25) */
+				max-width: 1500px;
+
+				/* min-width: (containers) */
+				min-width: 1200px;
+			}
+
+		/* 75% */
+			.posting.\37 5\25 {
+
+				/* width: (containers * 0.75) */
+				width: 900px;
+
+			}
+
+		/* 50% */
+			.posting.\35 0\25 {
+
+				/* width: (containers * 0.50) */
+				width: 600px;
+
+			}
+
+		/* 25% */
+			.posting.\32 5\25 {
+
+				/* width: (containers * 0.25) */
+				width: 300px;
+
+			}
 /* Grid */
 
 	.row {

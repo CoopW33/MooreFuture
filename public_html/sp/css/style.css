@@ -47,7 +47,7 @@
 	
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #666;
+		color:#666;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -61,6 +61,7 @@
 	h2 {
 		font-size: 1.75em;
 		line-height: 1.5em;
+		color: red;
 	}
 
 	h3 {
@@ -240,6 +241,110 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown2:hover .dropbtn2 {
     background-color: #transparent;
+}
+/* Style The Dropdown Button */
+.dropbtn3 {
+    
+    background: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown3 {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: rgba(62, 66, 66, .5);
+    text-align: right;
+    min-width: 150px;
+    padding-right: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content3 a {
+    color: white;
+    height: 4em;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: block;
+
+}
+/* Change color of dropdown links on hover */
+.dropdown-content3
+ a:hover
+ {background-color: rgba(62, 66, 66, .7);
+ }
+
+/* Show the dropdown menu on hover */
+.dropdown3:hover .dropdown-content3 {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown3:hover .dropbtn3 {
+    background-color: rgba(62, 66, 66, .5);
+}
+/* Style The Dropdown Button */
+.dropbtn4 {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown4 {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content4 {
+    display: none;
+    position: absolute;
+    background-color: rgba(62, 66, 66, .5);
+    text-align: center;
+    min-width: 150px;
+    padding-right: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content4 a {
+    color: #ffffff;
+    height: 4em;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content4 a:hover {background-color: rgba(62, 66, 66, .7)}
+
+/* Show the dropdown menu on hover */
+.dropdown4:hover .dropdown-content4 {
+    display: block;
+    position: relative;
+    top: -33px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown4:hover .dropbtn4 {
+    background-color: #transparent;
+}
+
+.posting {
+color:red;
+background-color:black;
 }
 
 /* Section/Article */
@@ -1118,7 +1223,7 @@
 			-webkit-background-image: linear-gradient(60deg, #00cc66 50%, #00b359 50%);
 			-o-background-image: linear-gradient(60deg, #00cc66 50%, #00b359 50%);
 			-ms-background-image: linear-gradient(60deg, #00cc66 50%, #00b359 50%);
-			background-image: linear-gradient(60deg, #00cc66 40%, #00b359 50%);
+			background-image: linear-gradient(60deg, #00cc66 50%, #00b359 50%);
 			color: #ffffff;
 		}
 
@@ -1127,7 +1232,7 @@
 			}
 
 			.wrapper.style1 h2 {
-				color: #ffffff;
+				color: red;
 			}
 
 			.wrapper.style1 .icon.big {

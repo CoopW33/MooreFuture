@@ -44,16 +44,16 @@
 
 /* Wrapper */
 
-	.wrapper {
+	.posting {
 		/* Style 1 Wrapper */
 		/* Style 2 Wrapper */
 	}
 
-		.wrapper.style1 {
+		.posting.style1 {
 			padding: 4em 2em 2em;
 		}
 
-		.wrapper.style2 {
+		.posting.style2 {
 			padding: 4em 0em 2em;
 		}
 

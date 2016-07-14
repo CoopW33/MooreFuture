@@ -4,7 +4,7 @@ include_once 'Dbconnect.php';
 
 if(isset($_SESSION['user'])!="") //checks if user is logged in
 {
- header("Location: sp/index.html");
+ header("Location:shome.html");
 }
 if(isset($_POST['btn-login']))
 {
@@ -15,7 +15,7 @@ if(isset($_POST['btn-login']))
  if($row['password']==md5($upass))
  {
   $_SESSION['user'] = $row['user_id']; //checks if password belongs to user ID
-  header("Location: sp/index.html"); //sends users to home page if login is correct
+  header("Location:shome.html"); //sends users to home page if login is correct
  }
  else
  {
@@ -60,7 +60,7 @@ if(isset($_POST['btn-login']))
 
 				<p><label for="password">Password</label></p>
 				<p><input type="password" name="pass" id="pass" value="password" onBlur="if(this.value=='')this.value='password'" onFocus="if(this.value=='password')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
-				<form method="get"action="sp/index.html">
+				<form method="get"action="shome.html">
 				<p><button type="submit" name="btn-login">Sign In</button></td>
 				</form>
 			</fieldset>

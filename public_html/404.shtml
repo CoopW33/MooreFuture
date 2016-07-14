@@ -3,15 +3,18 @@
 <meta charset="utf-8"/>
 <title>404 - this page does not exist</title>
 <style>
+
 </style>
 </head>
 <body>
 <center>
-<h1>404 ERROR</h1>
-<h6>
-<br>
+
+<img src="/img/404.png" height="600px" width="1200px">
 </h6>
 <h2>Page does not exist</h2>
+<body>
+	Blah blah blah blah go back 
+	<a href="http://www.moorefuture.com/Logout.php"> Logout here</a>
 </center>
 </body>
 </html>
