@@ -61,7 +61,7 @@
 	h2 {
 		font-size: 1.75em;
 		line-height: 1.5em;
-		color: red;
+		color: black;
 	}
 
 	h3 {
@@ -1232,7 +1232,7 @@ background-color:black;
 			}
 
 			.wrapper.style1 h2 {
-				color: red;
+				color: black;
 			}
 
 			.wrapper.style1 .icon.big {
@@ -1307,3 +1307,8 @@ background-color:black;
 					margin-left: 0;
 					padding-left: 0;
 				}
+
+  textarea {
+
+  	resize: none;
+  }
