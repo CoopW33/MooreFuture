@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once 'Dbconnect.php';
-if(isset($_SESSION['users'])!="")
+if(isset($_SESSION['user'])!="")
 {
  header('Location: sp/shome.html');
 }

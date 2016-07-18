@@ -1,9 +1,9 @@
 <?php
 session_start();
 include_once 'Dbconnect.php';
-if(isset($_SESSION['user'])!="") //checks if user is logged in
+if(isset($_SESSION['user'])=="") //checks if user is logged in
 {
- header("Location: sp/shome.html");
+ header("Location: login.html");
 }
 ?>
 <html lang="en">
@@ -29,16 +29,42 @@ if(isset($_SESSION['user'])!="") //checks if user is logged in
 	<body class="landing">
 
 		<!-- Header -->
-			<header id="header">
-				<h1><a href="shome.html">Moore Future</a></h1>
+<header id="header">
+				<h1><a href="shome.html"> <div class="dropdown4"><button class="dropbtn4">
+  <img src="images/MFLogo.png" alt="Moore Forward" width="150" height="60"></button></a>
+  <div class="dropdown-content4">
+     <a href="aboutus.html">About Us</a>
+				</h1>
+  		</div>
+	</div>
 				<nav id="nav">
 					<ul>
-						<li><a href="shome.html">Home</a></li>
-						<li><a href="Jobsearch.html">Job Search</a></li>
-						<li><a href="4yearplan.html">4 Year Plan</a></li>
-						<li><a href="ResumeBuild.html">Resume builder</a></li>
-						<li><a href="Resources.html">Resources</a></li>
-						<li><a href="student.profile.html">Profile</a></li>
+						<li><a href="Op.html">
+							<div class="dropdown3">
+  <button class="dropbtn3">Opportunities</button></a>
+  <div class="dropdown-content3" style="right:0;">
+  	<a href="Opsearch.html"> Search</a>
+  	<a href="Opbrowse.html"> Browse</a>
+    
+</li>
+						<li><a href="4yearplan.html">
+							<div class="dropdown3">
+  <button class="dropbtn3">4 Year Plan</button></a>
+  <div class="dropdown-content3" style="right:0;">
+    <a href="Survey.html">Interest Survery</a>
+    <a href="ResumeBuild.html">Resume Builder</a>
+</li>
+						<li><a href="student.profile.php">
+							<div class="dropdown3">
+  <button class="dropbtn3">Profile</button></a>
+  <div class="dropdown-content3" style="right:0;">
+    <a href="Resources.html">Resources</a>
+    <a href="">Resume Builder</a>
+    <a href="http://www.moorefuture.com">Log out</a>
+</li>
+					
+  </div>
+</div>
 						
 					</ul>
 				</nav>
@@ -96,7 +122,7 @@ function redirect($uri) {
 $result = mysql_safe_query('SELECT * FROM posts ORDER BY date DESC');
 
 if(!mysql_num_rows($result)) {
-    echo 'There hace been no posts yet.';
+    echo 'There have been no posts yet.';
 } else {
     while($row = mysql_fetch_assoc($result)) {
         echo '<h2>'.$row['title'].'</h2>';
