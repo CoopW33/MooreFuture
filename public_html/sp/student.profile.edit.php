@@ -1,3 +1,30 @@
+<?php
+session_start();
+
+include_once 'Dbconnect.php';
+
+if(isset($_SESSION['user'])=="") //checks if user is logged in
+{
+ header("Location: sp/shome.html");
+}
+
+
+
+if(isset($_POST['btn-signup'])) //when signup button is pressed
+{
+  $first = mysql_real_escape_string($_POST['first']);
+  $last  = mysql_real_escape_string($_POST['last']);
+  $email = mysql_real_escape_string($_POST['email']);
+  $password = mysql_real_escape_string($_POST['password']);
+  $password2 = mysql_real_escape_string($_POST['password2']);
+  $birthday = mysql_real_escape_string($_POST['birthday']);
+ }
+
+
+
+$res=mysql_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']); 
+$userRow=mysql_fetch_array($res); //$res is users email
+?>
 <!DOCTYPE html>
 <!--
 	Interphase by TEMPLATED
@@ -7,7 +34,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Moore Future - Browse</title>
+		<title>Generic - Profile</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -16,7 +43,6 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<link rel="stylesheet" href="css/JobS.css"/>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -25,6 +51,8 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
+
+
 
 		<!-- Header -->
 			<header id="header">
@@ -68,95 +96,34 @@
 				</nav>
 			</header>
 
+
 		<!-- Main -->
 			<section id="main" class="wrapper">
 				<div class="container">
 
 					<header class="major">
-						<h2>Browse Opportunities</h2>
+						<h2>Profile</h2>
 					</header>
-		
-		</div>
-
-
-
-
-
-
-<?php
-include 'Dbconnect.php';
-// index2.html
-if($_GET['user_level'] == 1){
-	$buisness=true;
-}else{
-	$buisness=false;
-}
-if($_GET['user_level'] == 2){
-	$admin=true;
-}else{
-	$admin=false;
-}
-
-function mysql_safe_string($args) {
-    $value = trim($args);
-    if(empty($args))           return 'NULL';
-    elseif(is_numeric($args))  return $value;
-    else {
-    	return "'".mysql_real_escape_string($args)."'";
-		 }                        
-}
-
-function mysql_safe_query($query) {
-    $args = array_slice(func_get_args(),1);
-    $args = array_map('mysql_safe_string',$args);
-    return mysql_query(vsprintf($query,$args));
-}
-
-function redirect($uri) {
-    header('location:'.$uri);
-    exit;
-}
-
-
-$result = mysql_safe_query('SELECT * FROM posts ORDER BY date DESC');
-
-if(!mysql_num_rows($result)) {
-    echo 'There have been no posts yet.';
-} else {
-
-
-
-
-
-echo '<form>';
-    while($row = mysql_fetch_assoc($result)) {
-        echo '<h2>'.$row['title'].'</h2>';
-        $body = substr($row['body'], 0, 300);
-        echo nl2br($body).'...<br/>';
-        echo '<a href="post_view.php?id='.$row['id'].'">Read More</a> | ';
-        
-        if(admin == true or buisness == true){echo '<a href="post_view.php?id='.$row['id'].'#comments">'.$row['num_comments'].' comments</a>';}    
-        echo '<hr/>';
-    }
-}
-
-echo <<<HTML
-<a href="post_add.php">+ New Post</a>
-HTML;
-echo '<form/>';
-?>
-
-
-
-
-
-
-
-	<br>
-	<br>
-<br>
-<br>
+				</div>
 			</section>
+				<div id="info">
+					
+					<div>
+					<style>
+{
+    margin-left:100px;
+}
+</style>
+<h3>
+					</div>
+						<h3>First Name: <?php echo $userRow['first'];?> </h3>
+						<h3>Last Name: <?php echo $userRow['last'];?> </h3>
+						<h3>Email: <?php echo $userRow['last'];?> </h3>
+						<h3>Password: <input type="text" name="password"> </h3>
+						<h3>Password: <input type="text" name="password2"> </h3>
+						<h3>Grade: <input type="text" name="grade"> </h3>
+						<h3>Welcome</h3>
+					</div>
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="container">

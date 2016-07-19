@@ -1,0 +1,126 @@
+<?php
+session_start();
+include_once 'Dbconnect.php';
+if(isset($_SESSION['user'])!="")
+{
+ header('Location: sp/shome.html');
+}
+if(isset($_POST['btn-signup'])) //when signup button is pressed
+{
+  $first = mysql_real_escape_string($_POST['first']);
+  $last  = mysql_real_escape_string($_POST['last']);
+  $email = mysql_real_escape_string($_POST['email']);
+  $password = mysql_real_escape_string($_POST['password']);
+  $password2 = mysql_real_escape_string($_POST['password2']);
+  $birthday = mysql_real_escape_string($_POST['birthday']);
+  $grade = mysql_real_escape_string($_POST['birthday']);
+  $school = mysql_real_escape_string($_POST['school']);
+
+    if(strlen($password)>5){
+        if(preg_match('`[a-z]`',$password)){
+          if(preg_match('`[0-9]`',$password)){
+            if($password === $password2){
+              if($first != '' or $last != '' or $email != '' or $birthday != '' or $grade != '' or $school != ''){
+
+
+            if(mysql_query("INSERT INTO users(first,last,email,password,birthday,grade,school)VALUES('$first','$last','$email','$password','$birthday','$grade','$school')")){
+              ?>
+              <script>alert('Successfully registered - Thank you for signing up!');</script>
+              <?php
+              $res=mysql_query("SELECT * FROM users WHERE email='$email'");
+              $row=mysql_fetch_array($res);
+              if($row['password']==md5($upass))
+              {
+              $_SESSION['user'] = $row['user_id']; //checks if password belongs to user ID
+              header("Location: sp/index.html"); 
+              }
+            }else{
+              ?>
+              <script>alert('Sorry! There has been an error while registering you - Please try again');</script>
+              <?php
+            }
+            }else{
+              ?>
+              <script>alert('Error: You must enter all the required fields.')
+              <?php
+              }
+          }else{
+            ?>
+            <script>alert('Error: You entered two different passwords.')
+            <?php
+            $password3 = true;
+            }
+          }else{
+            ?>
+            <script>alert('Error: Password must have at least one number.')
+            <?php
+            $number = true;
+          }          
+        }else{
+          ?>
+          <script>alert('Error: Password must have at least one lowercase letter.')</script>
+          <?php
+          $lowercase = true;
+          }
+    
+    }else{
+      ?>
+      <script>alert('Error: Password must be longer then 6 characters.')</script>
+      <?php
+      $length = true;
+    }
+  }
+?>
+
+
+<!DOCTYPE html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='signup.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="formiteration6.js"></script>
+    </head>
+    <body>
+    <div id="login-form">
+
+      <form method="post">
+        <h1>Sign Up</h1>
+
+
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name"> First Name:</label>
+          <input type="text" name="first" placeholder="First Name" required>
+          
+          <label for="last">Last Name:</label>
+          <input type="text" name="last" placeholder="Last Name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="example@gmail.com" required>
+
+          <label for="password">Password:</label>
+          <input type="password" name="password" placeholder="Password" required>
+
+          <label for="password">Password Confirmation:</label>
+          <input type="password" name="password2" placeholder="Password" required>
+
+          <label for="grade">Grade</label>
+          <input type="text" name="grade" placeholder="Grade" required>
+
+          <label for="school">School</label>
+          <input type="text" name="school" placeholder="School" required>
+          
+          <label>Date of Birth:</label>
+      <label for="size_1"></label><input type="date" name="birthday" id="birthday" value="dd/mm/yy" required />
+        </fieldset>
+        
+        </fieldset>
+        <button name="btn-signup" type="submit" value="submit">Sign Up</button>
+      </form>
+    </div>
+    </body>
+</html>
