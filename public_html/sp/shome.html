@@ -124,6 +124,13 @@ $result = mysql_safe_query('SELECT * FROM posts ORDER BY date DESC');
 if(!mysql_num_rows($result)) {
     echo 'There have been no posts yet.';
 } else {
+
+
+
+
+?>
+<table id="t02">
+	<?php
     while($row = mysql_fetch_assoc($result)) {
         echo '<h2>'.$row['title'].'</h2>';
         $body = substr($row['body'], 0, 300);
@@ -131,13 +138,21 @@ if(!mysql_num_rows($result)) {
         echo '<a href="post_view.php?id='.$row['id'].'">Read More</a> | ';
         
         if(admin == true or buisness == true){echo '<a href="post_view.php?id='.$row['id'].'#comments">'.$row['num_comments'].' comments</a>';}    
-        echo '<hr/>';
+ ?> </table>
+ <?php
+        echo '</hr>';
     }
 }
 
 echo <<<HTML
 <a href="post_add.php">+ New Post</a>
 HTML;
+
+
+
+
+
+
 ?>
 				</div>
 			</section>

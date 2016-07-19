@@ -20,7 +20,7 @@ $userRow=mysql_fetch_array($res); //$res is users email
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Generic - Interphase by TEMPLATED</title>
+		<title>Generic - Profile</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -117,39 +117,31 @@ $userRow=mysql_fetch_array($res); //$res is users email
 				<div class="container">
 					<div class="row">
 						<section class="4u 6u(medium) 12u$(small)">
-							<h3>Lorem ipsum</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, cumque!</p>
-							<ul class="alt">
-								<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-								<li><a href="#">Quod adipisci perferendis et itaque.</a></li>
-								<li><a href="#">Itaque eveniet ullam, veritatis reiciendis?</a></li>
-								<li><a href="#">Accusantium repellat accusamus a, soluta.</a></li>
-							</ul>
+							<h3>Having Trouble?</h3>
+							<p>Feel free to contact your school's Career Developement Cordinator with any questions. They're always happy to help!</p>
+							
 						</section>
 						<section class="4u 6u$(medium) 12u$(small)">
-							<h3>Nostrum, repellat!</h3>
-							<p>Tenetur voluptate exercitationem eius tempora! Obcaecati suscipit, soluta earum blanditiis.</p>
+							<h3></h3>
+							<p></p>
 							<ul class="alt">
-								<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-								<li><a href="#">Id inventore, qui necessitatibus sunt.</a></li>
-								<li><a href="#">Deleniti eum odit nostrum eveniet.</a></li>
-								<li><a href="#">Illum consectetur quibusdam eos corporis.</a></li>
+								<li><b style="color:white">Union Pines: </b>Stacey Patterson <br> Email: <a href=mailto:spatterson@ncmcs.org?Subject=Moore%20Future%20Help>spatterson@ncmcs.org</a> </li>
+								<li><b style="color:white">Pinecrest: </b>Karen Raliski <br> Email: <a href=mailto:kraliski@ncmcs.org?Subject=Moore%20Future%20Help>kraliski@ncmcs.org</a></li>
+								<li><b style="color:white">North Moore: </b>Kyle Greene <br> Email: <a href=mailto:kgreene@ncmcs.org?Subject=Moore%20Future%20Help>kgreene@ncmcs.org</a></li>
 							</ul>
 						</section>
 						<section class="4u$ 12u$(medium) 12u$(small)">
 							<h3>Contact Us</h3>
 							<ul class="icons">
-								<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon rounded fa-pinterest"><span class="label">Pinterest</span></a></li>
-								<li><a href="#" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.twitter.com/MooreForward" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/mooreforward" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/company/moore-forward" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							</ul>
 							<ul class="tabular">
 								<li>
 									<h3>Address</h3>
-									1234 Somewhere Road<br>
-									Nashville, TN 00000
+									108b East Main St<br>
+									Aberdeen NC, 28315
 								</li>
 								<li>
 									<h3>Mail</h3>
@@ -157,7 +149,7 @@ $userRow=mysql_fetch_array($res); //$res is users email
 								</li>
 								<li>
 									<h3>Phone</h3>
-									(000) 000-0000
+									(555) 555-5555
 								</li>
 							</ul>
 						</section>
@@ -165,7 +157,7 @@ $userRow=mysql_fetch_array($res); //$res is users email
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li>
 						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+						
 					</ul>
 				</div>
 			</footer>

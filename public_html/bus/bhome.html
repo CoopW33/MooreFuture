@@ -1,9 +1,9 @@
 <?php
 session_start();
 include_once 'Dbconnect.php';
-if(isset($_SESSION['Business'])!="") //checks if user is logged in
+if(isset($_SESSION['Business'])=="") //checks if user is logged in
 {
- header("Location: index.html");
+ header("Location: bhome.html");
 }
 ?>
 <html lang="en">
@@ -85,15 +85,15 @@ if(isset($_SESSION['Business'])!="") //checks if user is logged in
 						<p></p>
 					</header>
 					<div class="row 200%">
-<?php
+						<?php
 include 'Dbconnect.php';
 // post_add.php
-if($_GET['user_level'] == 1){
+if($_GET('user_level') == 1){
     $buisness=true;
 }else{
     $buisness=false;
 }
-if($_GET['user_level'] == 2){
+if($_GET('user_level') == 2){
     $admin=true;
 }else{
     $admin=false;
@@ -131,7 +131,6 @@ if(!empty($_POST)) {
 }
 }
 ?>
-
 <form method="post">
     <table>
         <tr>
@@ -143,16 +142,11 @@ if(!empty($_POST)) {
             <td><textarea name="body" id="body"></textarea></td>
         </tr>
         <tr>
-            <td><label for="body2">Body</label></td>
-            <td><textarea name="body2" id="body2"></textarea></td>
-        </tr>
-        <tr>
             <td></td>
             <td><input type="submit" value="Post" /></td>
         </tr>
     </table>
 </form>
-
 
 					</div>
 				</div>

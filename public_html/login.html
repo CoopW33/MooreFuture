@@ -4,7 +4,7 @@ include_once 'Dbconnect.php';
 
 if(isset($_SESSION['user'])!="") //checks if user is logged in
 {
- header("Location:sp/shome.html");
+ header("Location:shome.html");
 }
 if(isset($_POST['btn-login']))
 {
@@ -15,7 +15,7 @@ if(isset($_POST['btn-login']))
  if($row['password']==md5($upass))
  {
   $_SESSION['user'] = $row['user_id']; //checks if password belongs to user ID
-  header("Location:sp/shome.html"); //sends users to home page if login is correct
+  header("Location:shome.html"); //sends users to home page if login is correct
  }
  else
  {

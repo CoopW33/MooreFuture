@@ -923,6 +923,13 @@ background-color:black;
 				border-top: 0;
 			}
 
+
+table#t02 {
+
+
+    border: 5px solid black;
+      
+}
 /* Button */
 
 	input[type="submit"],

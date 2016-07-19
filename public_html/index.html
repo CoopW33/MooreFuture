@@ -3,7 +3,7 @@ session_start();
 include_once 'Dbconnect.php';
 if(isset($_SESSION['user'])!="") //checks if user is logged in
 {
- header("Location: sp/shome.html");
+ header("Location: sp/index.html");
 }
 ?>
 <!DOCTYPE html>
@@ -59,7 +59,7 @@ if(isset($_SESSION['user'])!="") //checks if user is logged in
 					<section>
 					<h3>Login</h3>
 					<p> Already have an account with us ,then login. </p>
-					<a href="slogin.html"><button type="link"  align ="center" style="background-color:transparent; border-color:transparent;"> <img src="unnamed.png" height="100"/></button></a>
+					<a href="login.html"><button type="link"  align ="center" style="background-color:transparent; border-color:transparent;"> <img src="unnamed.png" height="100"/></button></a>
 					</div><!-- /page-inner -->
 				</div><!-- /page-right -->
 				<div class="page page-left">
@@ -74,7 +74,7 @@ if(isset($_SESSION['user'])!="") //checks if user is logged in
 				<section>
 					<h3>Login</h3>
 					<p> Already have an account with us ,then login. </p>
-					<a href="blogin.html"><button type="link"  align ="center" style="background-color:transparent; border-color:transparent;"> <img src="unnamed.png" height="100"/></button></a>
+					<a href="login.html"><button type="link"  align ="center" style="background-color:transparent; border-color:transparent;"> <img src="unnamed.png" height="100"/></button></a>
 					<section>
 					</div><!-- /page-inner -->
 				</div><!-- /page-left -->

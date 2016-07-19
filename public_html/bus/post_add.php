@@ -2,14 +2,14 @@
 include 'Dbconnect.php';
 // post_add.php
 if($_GET('user_level') == 1){
-    $buisness=true
+    $buisness=true;
 }else{
-    $buisness=false
+    $buisness=false;
 }
 if($_GET('user_level') == 2){
-    $admin=true
+    $admin=true;
 }else{
-    $admin=false
+    $admin=false;
 }
 if(admin == true or buisness == true){
 
