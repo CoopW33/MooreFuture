@@ -1,15 +1,15 @@
 <?php
 include 'Dbconnect.php';
 // post_delete.php
-if($_GET('user_level') == 1){
-	$buisness=true
+if($_GET['user_level'] == 1){
+	$buisness=true;
 }else{
-	$buisness=false
+	$buisness=false;
 }
-if($_GET('user_level') == 2){
-	$admin=true
+if($_GET['user_level'] == 2){
+	$admin=true;
 }else{
-	$admin=false
+	$admin=false;
 }
 if(admin == true){
 
@@ -36,6 +36,6 @@ function redirect($uri) {
 
 mysql_safe_query('DELETE FROM posts WHERE id=%s LIMIT 1', $_GET['id']);
 mysql_safe_query('DELETE FROM comments WHERE post_id=%s', $_GET['id']);
-redirect('index.php');
+redirect('index2.html');
 }
 ?>

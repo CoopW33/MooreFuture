@@ -3,7 +3,7 @@ session_start();
 include_once 'Dbconnect.php';
 if(isset($_SESSION['user'])=="") //checks if user is logged in
 {
- header("Location: sp/shome.html");
+ header("Location: shome.html");
 }
 ?>
 <html lang="en">
@@ -60,7 +60,7 @@ if(isset($_SESSION['user'])=="") //checks if user is logged in
   <div class="dropdown-content3" style="right:0;">
     <a href="Resources.html">Resources</a>
     <a href="">Resume Builder</a>
-    <a href="http://www.moorefuture.com">Log out</a>
+    <a href="Logout.php?logout">Sign Out</a>
 </li>
 					
   </div>

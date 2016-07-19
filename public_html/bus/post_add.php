@@ -1,12 +1,12 @@
 <?php
 include 'Dbconnect.php';
 // post_add.php
-if($_GET('user_level') == 1){
+if($_GET['user_level'] == 1){
     $buisness=true;
 }else{
     $buisness=false;
 }
-if($_GET('user_level') == 2){
+if($_GET['user_level'] == 2){
     $admin=true;
 }else{
     $admin=false;
@@ -54,6 +54,10 @@ if(!empty($_POST)) {
         <tr>
             <td><label for="body">Body</label></td>
             <td><textarea name="body" id="body"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="body2">Body</label></td>
+            <td><textarea name="body2" id="body2"></textarea></td>
         </tr>
         <tr>
             <td></td>

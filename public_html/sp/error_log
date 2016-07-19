@@ -61,3 +61,31 @@
 [07-Jul-2016 18:03:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
 [07-Jul-2016 18:03:06 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
 [08-Jul-2016 22:39:44 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[11-Jul-2016 16:16:53 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[13-Jul-2016 15:32:47 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/moorefuture/public_html/sp/post_view.php on line 45
+[14-Jul-2016 13:38:12 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[14-Jul-2016 13:38:17 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[18-Jul-2016 13:31:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/moorefuture/public_html/sp/shome.html on line 4
+[18-Jul-2016 14:38:07 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE), expecting ',' or ';' in /home/moorefuture/public_html/sp/shome.html on line 133
+[18-Jul-2016 14:38:12 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE), expecting ',' or ';' in /home/moorefuture/public_html/sp/shome.html on line 133
+[18-Jul-2016 14:55:17 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/moorefuture/public_html/sp/Op.html on line 163
+[18-Jul-2016 15:46:02 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.edit.php on line 12
+[18-Jul-2016 15:46:10 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.edit.php on line 12
+[18-Jul-2016 15:46:15 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.edit.php on line 12
+[18-Jul-2016 15:47:04 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.edit.php on line 12
+[18-Jul-2016 15:47:04 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.edit.php on line 12
+[18-Jul-2016 15:47:50 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[18-Jul-2016 15:47:54 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[18-Jul-2016 15:48:14 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[18-Jul-2016 16:11:21 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/moorefuture/public_html/sp/student.profile.edit.php on line 212
+[18-Jul-2016 16:13:37 UTC] PHP Parse error:  syntax error, unexpected 'nl2br' (T_STRING), expecting ',' or ';' in /home/moorefuture/public_html/sp/shome.html on line 137
+[18-Jul-2016 16:14:50 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/moorefuture/public_html/sp/student.profile.edit.php on line 212
+[18-Jul-2016 16:14:54 UTC] PHP Parse error:  syntax error, unexpected 'nl2br' (T_STRING), expecting ',' or ';' in /home/moorefuture/public_html/sp/shome.html on line 137
+[18-Jul-2016 16:14:55 UTC] PHP Parse error:  syntax error, unexpected 'nl2br' (T_STRING), expecting ',' or ';' in /home/moorefuture/public_html/sp/shome.html on line 137
+[18-Jul-2016 16:16:35 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/moorefuture/public_html/sp/student.profile.edit.php on line 212
+[18-Jul-2016 16:17:05 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/moorefuture/public_html/sp/student.profile.edit.php on line 192
+[18-Jul-2016 16:17:07 UTC] PHP Parse error:  syntax error, unexpected 'nl2br' (T_STRING), expecting ',' or ';' in /home/moorefuture/public_html/sp/shome.html on line 137
+[18-Jul-2016 16:17:29 UTC] PHP Parse error:  syntax error, unexpected 'nl2br' (T_STRING), expecting ',' or ';' in /home/moorefuture/public_html/sp/shome.html on line 137
+[18-Jul-2016 16:17:32 UTC] PHP Parse error:  syntax error, unexpected 'nl2br' (T_STRING), expecting ',' or ';' in /home/moorefuture/public_html/sp/shome.html on line 137
+[19-Jul-2016 13:40:01 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.edit.php on line 26
+[19-Jul-2016 13:40:02 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12

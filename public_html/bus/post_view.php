@@ -1,15 +1,17 @@
+
+
 <?php
 include 'Dbconnect.php';
 // post_view.php
-if($_GET('user_level') == 1){
-    $buisness=true
+if($_GET['user_level'] == 1){
+    $buisness=true;
 }else{
-    $buisness=false
+    $buisness=false;
 }
-if($_GET('user_level') == 2){
-    $admin=true
+if($_GET['user_level'] == 2){
+    $admin=true;
 }else{
-    $admin=false
+    $admin=false;
 }
 
 
@@ -45,7 +47,7 @@ $row = mysql_fetch_assoc($result);
 echo '<h2>'.$row['title'].'</h2>';
 echo '<em>Posted '.date('F j<\s\up>S</\s\up>, Y', $row['date']).'</em><br/>';
 echo nl2br($row['body']).'<br/>';
-echo '<a href="post_edit.php?id='.$_GET['id'].'">Edit</a> | <a href="post_delete.php?id='.$_GET['id'].'">Delete</a> | <a href="index.php">View All</a>';
+echo '<a href="post_edit.php?id='.$_GET['id'].'">Edit</a> | <a href="post_delete.php?id='.$_GET['id'].'">Delete</a> | <a href="index2.html">View All</a>';
 
 echo '<hr/>';
 $result = mysql_safe_query('SELECT * FROM comments WHERE post_id=%s ORDER BY date ASC', $_GET['id']);

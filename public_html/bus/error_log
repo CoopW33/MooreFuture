@@ -3,3 +3,121 @@
 [06-Jul-2016 15:02:54 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/bus/busprofile.php on line 12
 [06-Jul-2016 15:03:08 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/bus/busprofile.php on line 12
 [06-Jul-2016 15:06:46 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/bus/busprofile.php on line 12
+[12-Jul-2016 15:51:57 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/bus/busprofile.html on line 12
+[14-Jul-2016 16:01:30 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/moorefuture/public_html/bus/index.php on line 58
+[14-Jul-2016 16:01:39 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/moorefuture/public_html/bus/index.php on line 58
+[14-Jul-2016 16:27:53 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/moorefuture/public_html/bus/index.php on line 58
+[18-Jul-2016 13:11:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/moorefuture/public_html/bus/index.php on line 58
+[19-Jul-2016 13:33:54 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/moorefuture/public_html/bus/bhome.html on line 93
+[19-Jul-2016 13:35:21 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:35:33 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:35:33 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:35:34 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:36:21 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:36:21 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:36:28 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:36:28 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:36:41 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:36:43 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:24 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:25 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:25 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:26 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:26 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:26 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:26 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:27 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:27 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:28 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:28 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:28 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:28 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:29 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:29 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:29 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:29 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:30 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:30 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:30 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:30 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:31 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:31 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:31 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:31 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:31 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:31 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:31 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:31 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:31 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:32 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:32 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:32 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:37:33 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:44:58 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:44:58 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:45:03 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/moorefuture/public_html/bus/post_add.php on line 6
+[19-Jul-2016 13:45:32 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/post_add.php on line 4
+[19-Jul-2016 13:56:33 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:33 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:34 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:34 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:34 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:34 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:34 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:34 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:34 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:34 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:35 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:35 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:35 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:35 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:35 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:35 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:36 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:41 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:41 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:41 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:41 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:42 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:42 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:42 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:42 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:42 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:42 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:43 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:43 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:43 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:43 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:44 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:44 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:56:44 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:19 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:19 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:19 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:19 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:19 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:20 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:20 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:20 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:20 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:20 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:20 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:20 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:20 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:21 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:21 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:21 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:57:21 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:58:48 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 13:59:41 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 14:09:18 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 14:09:34 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/moorefuture/public_html/bus/index.php on line 58
+[19-Jul-2016 14:09:47 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/moorefuture/public_html/bus/index.php on line 58
+[19-Jul-2016 14:10:08 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 14:10:53 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 14:11:51 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 14:13:26 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 14:18:23 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 14:19:52 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 14:20:03 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91
+[19-Jul-2016 14:24:00 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/bus/bhome.html on line 91

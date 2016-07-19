@@ -61,7 +61,7 @@
 	h2 {
 		font-size: 1.75em;
 		line-height: 1.5em;
-		color: black;
+		color: red;
 	}
 
 	h3 {
@@ -923,14 +923,6 @@ background-color:black;
 				border-top: 0;
 			}
 
-
-table#t02 {
-
-
-    border: 5px solid black;
-    background: white;
-   
-}
 /* Button */
 
 	input[type="submit"],
@@ -1240,7 +1232,7 @@ table#t02 {
 			}
 
 			.wrapper.style1 h2 {
-				color: black;
+				color: red;
 			}
 
 			.wrapper.style1 .icon.big {
@@ -1315,8 +1307,3 @@ table#t02 {
 					margin-left: 0;
 					padding-left: 0;
 				}
-
-  textarea {
-
-  	resize: none;
-  }

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once 'Dbconnect.php';
-if(isset($_SESSION['users'])!="")
+if(isset($_SESSION['user'])!="")
 {
  header('Location: sp/shome.html');
 }
@@ -12,16 +12,18 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
   $email = mysql_real_escape_string($_POST['email']);
   $password = mysql_real_escape_string($_POST['password']);
   $password2 = mysql_real_escape_string($_POST['password2']);
-  $birthday = mysql_real_escape_string($_POST['birthday']); 
+  $birthday = mysql_real_escape_string($_POST['birthday']);
+  $grade = mysql_real_escape_string($_POST['birthday']);
+  $school = mysql_real_escape_string($_POST['school']);
 
     if(strlen($password)>5){
         if(preg_match('`[a-z]`',$password)){
           if(preg_match('`[0-9]`',$password)){
             if($password === $password2){
-              if($first != '' or $last != '' or $email != '' or $birthday != ''){
+              if($first != '' or $last != '' or $email != '' or $birthday != '' or $grade != '' or $school != ''){
 
 
-            if(mysql_query("INSERT INTO users(first,last,email,password,birthday)VALUES('$first','$last','$email','$password','$birthday')")){
+            if(mysql_query("INSERT INTO users(first,last,email,password,birthday,grade,school)VALUES('$first','$last','$email','$password','$birthday','$grade','$school')")){
               ?>
               <script>alert('Successfully registered - Thank you for signing up!');</script>
               <?php
@@ -106,6 +108,11 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
           <label for="password">Password Confirmation:</label>
           <input type="password" name="password2" placeholder="Password" required>
 
+          <label for="grade">Grade</label>
+          <input type="text" name="grade" placeholder="Grade" required>
+
+          <label for="school">School</label>
+          <input type="text" name="school" placeholder="School" required>
           
           <label>Date of Birth:</label>
       <label for="size_1"></label><input type="date" name="birthday" id="birthday" value="dd/mm/yy" required />

@@ -1,3 +1,30 @@
+<?php
+session_start();
+
+include_once 'Dbconnect.php';
+
+if(isset($_SESSION['user'])=="") //checks if user is logged in
+{
+ header("Location: sp/shome.html");
+}
+
+
+
+if(isset($_POST['btn-signup'])) //when signup button is pressed
+{
+  $first = mysql_real_escape_string($_POST['first']);
+  $last  = mysql_real_escape_string($_POST['last']);
+  $email = mysql_real_escape_string($_POST['email']);
+  $password = mysql_real_escape_string($_POST['password']);
+  $password2 = mysql_real_escape_string($_POST['password2']);
+  $birthday = mysql_real_escape_string($_POST['birthday']);
+ }
+
+
+
+$res=mysql_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']); 
+$userRow=mysql_fetch_array($res); //$res is users email
+?>
 <!DOCTYPE html>
 <!--
 	Interphase by TEMPLATED
@@ -7,7 +34,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Moore Future - Survey</title>
+		<title>Generic - Profile</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -16,7 +43,6 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<link rel="stylesheet" href="css/JobS.css"/>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -25,6 +51,8 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
+
+
 
 		<!-- Header -->
 			<header id="header">
@@ -57,7 +85,7 @@
   <button class="dropbtn">Profile</button></a>
   <div class="dropdown-content" style="right:0;">
     <a href="Resources.html">Resources</a>
-    <a href="ResumeBuild.html">Resume Builder</a>
+    <a href="">Resume Builder</a>
     <a href="http://www.moorefuture.com">Log out</a>
 </li>
 					
@@ -68,64 +96,34 @@
 				</nav>
 			</header>
 
+
 		<!-- Main -->
 			<section id="main" class="wrapper">
 				<div class="container">
+
 					<header class="major">
-						<h2>Survey</h2>
+						<h2>Profile</h2>
 					</header>
-			<ol>
-				<li value="1"> I enjoy working with numbers
-				<li> I feel as though a task cannot be complete unless it analyzed from every angle
-				<li> I don't find math challenging 
-				<li> Working at a desk is something I'm interested in
-				<li> I am conscientious when it comes to spending money
-				<li> Are you creative?
-				<li> I am often told that I think "outside the box"
-				<li> I follow trends and fads
-				<li> I would rather make a craft myself rather than buy one
-				<li> I enjoy speaking to large groups of people and giving presentations
-				<li> I would be interested in hosting events (meetings, parties, conventions)
-				<li> I enjoy being organized
-				<li> I use social media often
-				<li> Different world religions interest me
-				<li> I enjoy studying world civilization
-				<li> Different cultures interest me
-				<li> I would travel to different countries if I could
-				<li> I want to reduce other's stress
-				<li> I don't mind being in a hospital for extended periods of time
-				<li> I enjoy helping the elderly
-				<li> I would join the peace core to help those all over the world
-				<li> Reviewing computer details interests me
-				<li> I am often considered a forward thinker
-				<li> Problem solving comes easy to me
-				<li> I enjoy making things myself
-				<li> Natural phenomenons such as global warming, interests me
-				<li> I would be apart of organizations such as PETA or ASPCA
-				<li> I encourage people to recycle
-				<li> I support local farmers market 
-				<li> I wouldn't mind working long nights/weekends
-				<li> It is important to follow the rules
-				<li> I'm usually the learder in group projects
-				<li> I would want to be apart of a corporation
-				<li> I enjoy reading
-				<li> Helping people reach their goals gives me joy
-				<li> I enjoy helping people learn new things
-				<li> Everyday is a new opportunity to learn
-				<li> I'm not afraid to test my limits
-				<li> I like collaborating as a team to reach a final project
-				<li> I would consider myself a "handy-man"
-				<li> Doing projects myself usually results in a better finished prduct
-				<li> I try to enforce rules
-				<li> I care about the generalized well being of others
-				<li> I would go out of my way for others
-				<li> I try my best to keep myself and others out of compromising situations
-			</ol>
-	<br>
-	<br>
-<br>
-<br>
+				</div>
 			</section>
+				<div id="info">
+					
+					<div>
+					<style>
+{
+    margin-left:100px;
+}
+</style>
+<h3>
+					</div>
+						<h3>First Name: <?php echo $userRow['first'];?> </h3>
+						<h3>Last Name: <?php echo $userRow['last'];?> </h3>
+						<h3>Email: <?php echo $userRow['email'];?> </h3>
+						<h3>Password: <?php echo $userRow['password'];?> </h3>
+						<h3><input type="text" name="grade"><?php echo $userRow['grade'];?> </h3>
+						<h3>Birthday: <?php echo $userRow['birthday'];?> </h3>
+						<h3>Welcome</h3>
+					</div>
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="container">

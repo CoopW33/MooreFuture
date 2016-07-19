@@ -56,6 +56,10 @@ if(!empty($_POST)) {
             <td><textarea name="body" id="body"></textarea></td>
         </tr>
         <tr>
+            <td><label for="body2">Body</label></td>
+            <td><textarea name="body2" id="body2"></textarea></td>
+        </tr>
+        <tr>
             <td></td>
             <td><input type="submit" value="Post" /></td>
         </tr>

@@ -1,15 +1,15 @@
 <?php
 include 'Dbconnect.php';
 // comment_add.php
-if($_GET('user_level') == 1){
-	$buisness=true
+if($_GET['user_level'] == 1){
+	$buisness=true;
 }else{
-	$buisness=false
+	$buisness=false;
 }
-if($_GET('user_level') == 2){
-	$admin=true
+if($_GET['user_level'] == 2){
+	$admin=true;
 }else{
-	$admin=false
+	$admin=false;
 }
 if(admin == true or buisness == true){
 
