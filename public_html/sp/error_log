@@ -1,0 +1,63 @@
+[05-Jul-2016 16:49:49 UTC] PHP Warning:  include(Dbconnect.php): failed to open stream: No such file or directory in /home/moorefuture/public_html/sp/index.php on line 54
+[05-Jul-2016 16:49:49 UTC] PHP Warning:  include(): Failed opening 'Dbconnect.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/moorefuture/public_html/sp/index.php on line 54
+[05-Jul-2016 16:49:49 UTC] PHP Warning:  mysql_query(): Access denied for user 'moorefuture'@'localhost' (using password: NO) in /home/moorefuture/public_html/sp/index.php on line 70
+[05-Jul-2016 16:49:49 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/moorefuture/public_html/sp/index.php on line 70
+[05-Jul-2016 16:49:49 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/index.php on line 84
+[05-Jul-2016 17:21:03 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/moorefuture/public_html/sp/index.php on line 58
+[05-Jul-2016 17:21:22 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 13
+[05-Jul-2016 17:21:35 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 13
+[05-Jul-2016 17:23:37 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 13
+[05-Jul-2016 17:25:32 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 13
+[05-Jul-2016 17:25:39 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/index.php on line 56
+[05-Jul-2016 17:25:45 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 13
+[05-Jul-2016 17:28:47 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/index.php on line 56
+[05-Jul-2016 17:34:20 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/moorefuture/public_html/sp/student.profile.php on line 6
+[05-Jul-2016 17:34:58 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/moorefuture/public_html/sp/student.profile.php on line 6
+[05-Jul-2016 17:37:13 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/moorefuture/public_html/sp/student.profile.php on line 6
+[06-Jul-2016 13:46:17 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/index.php on line 56
+[06-Jul-2016 13:48:32 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/index.php on line 56
+[06-Jul-2016 14:25:49 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/index.php on line 56
+[06-Jul-2016 15:06:51 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[06-Jul-2016 15:07:09 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[06-Jul-2016 15:13:21 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[06-Jul-2016 15:54:57 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 13:16:17 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/index.php on line 56
+[07-Jul-2016 13:22:19 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/index.php on line 56
+[07-Jul-2016 13:22:53 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/index.php on line 56
+[07-Jul-2016 13:27:10 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/index.php on line 56
+[07-Jul-2016 13:45:28 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/post_view.php on line 4
+[07-Jul-2016 13:45:43 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/post_add.php on line 4
+[07-Jul-2016 13:47:23 UTC] PHP Fatal error:  Function name must be a string in /home/moorefuture/public_html/sp/post_add.php on line 4
+[07-Jul-2016 15:09:46 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/Home.php on line 10
+[07-Jul-2016 15:16:41 UTC] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in /home/moorefuture/public_html/sp/Logout.php on line 7
+[07-Jul-2016 15:39:32 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 15:40:29 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 15:40:29 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 15:48:19 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/moorefuture/public_html/sp/Logout.php on line 17
+[07-Jul-2016 15:48:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/moorefuture/public_html/sp/Logout.php:17) in /home/moorefuture/public_html/sp/Logout.php on line 19
+[07-Jul-2016 15:48:31 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/moorefuture/public_html/sp/Logout.php on line 17
+[07-Jul-2016 15:48:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/moorefuture/public_html/sp/Logout.php:17) in /home/moorefuture/public_html/sp/Logout.php on line 19
+[07-Jul-2016 15:48:46 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/moorefuture/public_html/sp/Logout.php on line 17
+[07-Jul-2016 15:48:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/moorefuture/public_html/sp/Logout.php:17) in /home/moorefuture/public_html/sp/Logout.php on line 19
+[07-Jul-2016 15:50:12 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/moorefuture/public_html/sp/Logout.php on line 17
+[07-Jul-2016 15:50:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/moorefuture/public_html/sp/Logout.php:17) in /home/moorefuture/public_html/sp/Logout.php on line 19
+[07-Jul-2016 16:03:07 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/moorefuture/public_html/sp/Logout.php on line 17
+[07-Jul-2016 16:03:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/moorefuture/public_html/sp/Logout.php:17) in /home/moorefuture/public_html/sp/Logout.php on line 19
+[07-Jul-2016 16:05:40 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 16:05:41 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 16:37:19 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 16:37:32 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:55:32 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:56:01 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:56:03 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:56:38 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:56:41 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:57:25 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:57:32 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:57:35 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:57:38 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:58:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 17:58:16 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 18:03:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[07-Jul-2016 18:03:06 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
+[08-Jul-2016 22:39:44 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/moorefuture/public_html/sp/student.profile.php on line 12
