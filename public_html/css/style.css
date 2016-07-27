@@ -8,6 +8,17 @@ button {
     line-height: 1;
     font-family: inherit;
 }
+.selectstyle select {
+   background: red;
+   width: 500;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 50px;
+   -webkit-appearance: none;
+   }
 .clearfix:before,
 .clearfix:after {
     display: table;
@@ -1156,9 +1167,10 @@ body>#survey form label {
     font-size: 14px;
     margin: 0 0 12px;
 }
-body>#survey form select {
-    font-size: 13px;
+ form select {
+    font-size: 30px;
     width: auto;
+    background-color: #ff0000; 
 }
 body>#survey form input[type=text],
 body>#survey form input[type=tel],

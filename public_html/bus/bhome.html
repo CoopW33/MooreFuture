@@ -42,7 +42,7 @@ if(isset($_SESSION['Business'])!="") //checks if user is logged in
 							<div class="dropdown">
   <button class="dropbtn">Your Posts</button></a>
   <div class="dropdown-content" style="right:0;">
-  	<a href="newpost.html"> Make new post</a>
+  	<a href="bhome.html#one"> Make new post</a>
     
 </li>
 						<li><a href="studsearch.html">
@@ -82,9 +82,9 @@ if(isset($_SESSION['Business'])!="") //checks if user is logged in
 				<div class="container">
 					<header>
 						<h2>Post a new opportunity </h2>
-						<p></p>
+						
 					</header>
-					<div class="row 200%">
+				
 <?php
 include 'Dbconnect.php';
 // post_add.php
@@ -133,7 +133,7 @@ if(!empty($_POST)) {
 ?>
 
 <form method="post">
-    <table>
+    <table style='width:100%'>
         <tr>
             <td><label for="title">Title</label></td>
             <td><input name="title" id="title" /></td>
@@ -147,14 +147,12 @@ if(!empty($_POST)) {
             <td><textarea name="body2" id="body2"></textarea></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input type="submit" value="Post" /></td>
+            <td><input type="submit" value="Post"></td>
         </tr>
     </table>
 </form>
 
 
-					</div>
 				</div>
 			</section>
 

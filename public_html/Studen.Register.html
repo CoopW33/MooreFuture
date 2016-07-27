@@ -107,17 +107,25 @@ if(isset($_POST['btn-signup'])) //when signup button is pressed
 
           <label for="password">Password Confirmation:</label>
           <input type="password" name="password2" placeholder="Password" required>
-
-          <label for="grade">Grade</label>
-          <input type="text" name="grade" placeholder="Grade" required>
-
-          <label for="school">School</label>
-          <input type="text" name="school" placeholder="School" required>
-          
           <label>Date of Birth:</label>
-      <label for="size_1"></label><input type="date" name="birthday" id="birthday" value="dd/mm/yy" required />
-        </fieldset>
-        
+      <label for="size_1"></label><input type="date" name="birthday" id="birthday" placeholder="mm/dd/yyyy" required />
+
+          <fieldset>
+          <label for="grade">Grade:</label>
+  <input type="radio" name="grade" value="up9"> Upcoming 9th<br>
+  <input type="radio" name="grade" value="9"> 9th Grade<br>
+  <input type="radio" name="grade" value="10"> 10th Grade<br>  
+  <input type="radio" name="grade" value="11"> 11th Grade<br>
+  <input type="radio" name="grade" value="12"> 12th Grade<br>
+</fieldset>
+
+           <label for="select">School:</label>
+           <select required>
+    <option value="" selected data-default>-</option>
+    <option value="up">Union Pines</option>
+    <option value="pc">Pinecrest</option>
+    <option value="nm">North Moore</option>
+  </select>
         </fieldset>
         <button name="btn-signup" type="submit" value="submit">Sign Up</button>
       </form>

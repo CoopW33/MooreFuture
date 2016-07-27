@@ -47,8 +47,7 @@ input[type="search"],
 input[type="tel"],
 input[type="time"],
 input[type="url"],
-textarea,
-select {
+textarea {
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
@@ -66,14 +65,28 @@ select {
 }
 
 input { 
-margin: 100px 100px 100px 100px;
-padding
+text-align: left;
 }
 
 select {
-  padding: 6px;
-  height: 32px;
-  border-radius: 2px;
+   background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 93%;
+  background-color: #e8eeef;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  display: block;
+  position: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
 }
 
 button {
@@ -94,7 +107,6 @@ button {
 }
 
 fieldset {
-  margin-bottom: 30px;
   border: none;
   color:black;
 }
